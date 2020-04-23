@@ -1,0 +1,31 @@
+{
+    "name": "zareismail/meta-data",
+    "description": "A Laravel Nova tool.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "owenmelbz/nova-radio-field": "~0.0",
+        "optimistdigital/nova-multiselect-field": "~1.8",
+        "superlatif/nova-tag-input": "~1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zareismail\\MetaData\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [ 
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
