@@ -81,7 +81,9 @@ abstract class Resource extends NovaResource
             $this->when(static::relatableResources(), function() use ($request) { 
                 return Multiselect::make(__('Restrict For'), 'resource')
                             ->options($this->resourceInformation())
-                            ->saveAsJSON();
+                            ->fillUsing(function($request, $model, $attribute) {
+                                $model->{$attribute} = (array) $request->get($attribute);
+                            });
             }),
         ];
     } 
