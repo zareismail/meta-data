@@ -20,6 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [ 
+                "Zareismail\\MetaData\\ToolServiceProvider"
             ]
         }
     },
