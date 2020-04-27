@@ -1,6 +1,6 @@
 <?php
 
-namespace Zareismail\Amenity;
+namespace Zareismail\MetaData;
  
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Gate; 
